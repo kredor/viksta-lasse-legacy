@@ -1,7 +1,8 @@
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
-import { Music } from "lucide-react";
+import { Music, Mail } from "lucide-react";
 import memorialImage from "@/assets/viksta-lasse-memorial.jpg";
+import cdImage from "@/assets/cd-rullstrak-tungbas.jpg";
 const OmVikstaLasse = () => {
   return <Layout showFooter={false}>
       <div className="container mx-auto px-4 py-16">
@@ -53,6 +54,38 @@ const OmVikstaLasse = () => {
             </Button>
           </div>
         </div>
+
+        <section className="mb-16 bg-card border border-border rounded-lg p-8">
+          <h2 className="text-2xl font-semibold mb-6">Köp CD-skiva</h2>
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="rounded-lg overflow-hidden shadow-lg">
+              <img 
+                src={cdImage} 
+                alt="Rullstråk & tungbas - CD-omslag med Viksta-Lasse och Sven Larsson" 
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            <div className="space-y-4">
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Rullstråk & tungbas</h3>
+                <p className="text-muted-foreground mb-2">Viksta Lasse & Sven Larsson</p>
+                <p className="text-sm text-muted-foreground">Kråktjärn records</p>
+              </div>
+              <p className="text-muted-foreground leading-relaxed">
+                Bröderna Sven och Leonard Larsson (Viksta Lasse) från Viksta i norra Uppland kom med 
+                en LP 1977. Nu återutges den på CD och den flödar som en vårflod. Sven Larsson spelar 
+                munspel med stoppteknik kallad tungbas och trollar fram melodier som man inte trodde 
+                var möjligt.
+              </p>
+              <Button className="w-full" size="lg" asChild>
+                <a href="mailto:vikstalassefonden@gmail.com?subject=Beställning av CD - Rullstråk & tungbas">
+                  <Mail className="mr-2 h-5 w-5" />
+                  Beställ via e-post
+                </a>
+              </Button>
+            </div>
+          </div>
+        </section>
 
         <section className="mb-16">
           <h2 className="text-2xl font-semibold mb-6">Låtar av Viksta-Lasse</h2>
