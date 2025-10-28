@@ -8,7 +8,7 @@ const OmStiftelsen = () => {
 
         <div className="max-w-3xl space-y-8 mb-16">
           <section>
-            <h2 className="text-2xl font-semibold mb-4">Om stiftelsen</h2>
+            <h2 className="text-2xl font-semibold mb-4">Stiftelsens grundande</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
               Stiftelsen "Fonden till Viksta-Lasses minne" grundades av Vikstas Hembygdsförening den 14 april 1985. 
               Fondens ändamål är att bevara och hedra minnet av riksspelmannen Leonard Larsson från Viksta, 
