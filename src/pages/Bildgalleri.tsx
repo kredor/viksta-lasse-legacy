@@ -5,6 +5,7 @@ import vikstaLasseBingsjo2 from "@/assets/historiska-bilder/vikstalasse-bingsjo-
 import pontusEstling from "@/assets/vikstadagen/pontus-estling.jpg";
 import petrusDillner from "@/assets/vikstadagen/petrus-dillner.jpg";
 import bondpolskaDans from "@/assets/kurser/bondpolska-dans.jpg";
+import vikstadagen2017 from "@/assets/vikstadagen/vikstadagen-2017-allspel.jpg";
 
 const Bildgalleri = () => {
   const historiskaBilder = [
@@ -15,6 +16,10 @@ const Bildgalleri = () => {
   const stipendiaterBilder = [
     { src: pontusEstling, alt: "Pontus Estling får Viksta-Lasse-stipendiet 2024" },
     { src: petrusDillner, alt: "Petrus Dillner spelar nyckelharpa på Vikstadagen" },
+  ];
+
+  const vikstadagenBilder = [
+    { src: vikstadagen2017, alt: "Allspel under Vikstadagen 2017" },
   ];
 
   const kurserBilder = [
@@ -30,8 +35,9 @@ const Bildgalleri = () => {
     },
     {
       titel: "Vikstadagen genom åren",
-      antal: 48,
+      antal: 1,
       beskrivning: "Bilder från våra årliga folkmusikfester",
+      bilder: vikstadagenBilder,
     },
     {
       titel: "Stipendiater och spelmän",
