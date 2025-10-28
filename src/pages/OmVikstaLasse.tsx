@@ -1,10 +1,8 @@
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Music } from "lucide-react";
-
 const OmVikstaLasse = () => {
-  return (
-    <Layout showFooter={false}>
+  return <Layout showFooter={false}>
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl md:text-5xl font-bold mb-8 text-primary">Om Viksta-Lasse</h1>
 
@@ -23,12 +21,7 @@ const OmVikstaLasse = () => {
                 Gås-Anders (Anders Ljungqvist) och August Bohlin. Han komponerade också egna låtar, 
                 däribland tre Eklundapolskor.
               </p>
-              <p className="text-muted-foreground leading-relaxed">
-                Viksta-Lasse och Hjort Anders spelade och turnerade under många år tillsammans. Han 
-                hedrades med flera utmärkelser, bland annat Zornmärket i guld 1967, Uplands 
-                spelmansförbunds guldmärke 1975 och Upplands fornminnesförenings förtjänstmedalj 1969. 
-                En staty föreställande honom finns vid Viksta kyrka.
-              </p>
+              <p className="text-muted-foreground leading-relaxed">Viksta-Lasse och Hjort Anders spelade och turnerade under många år tillsammans. Han hedrades med flera utmärkelser, bland annat Zornmärket i guld 1967, Uplands spelmansförbunds guldmärke 1975 och Upplands fornminnesförenings förtjänstmedalj 1969. En minnessten över honom finns vid Viksta kyrka.</p>
             </section>
 
             <section>
@@ -66,50 +59,62 @@ const OmVikstaLasse = () => {
           <p className="text-muted-foreground mb-6">
             Nedan följer låtar komponerade av eller förknippade med Viksta-Lasse. 
             Noterna och mer information finns på{" "}
-            <a 
-              href="http://www.folkwiki.se/Personer/Viksta-Lasse" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-primary hover:underline font-medium"
-            >
+            <a href="http://www.folkwiki.se/Personer/Viksta-Lasse" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">
               FolkWiki
             </a>.
           </p>
           <div className="grid md:grid-cols-2 gap-4">
-            {[
-              { name: "40-årslåten Polka", url: "http://www.folkwiki.se/Musik/6041" },
-              { name: "Eklundapolska nr 1", url: "http://www.folkwiki.se/Musik/95" },
-              { name: "Eklundapolska nr 2", url: "http://www.folkwiki.se/Musik/14" },
-              { name: "Eklundapolska nr 3", url: "http://www.folkwiki.se/Musik/96" },
-              { name: "Fröken chick Polkett efter Viksta-Lasse", url: "http://www.folkwiki.se/Musik/4580" },
-              { name: "Glavalsen efter Viksta-Lasse", url: "http://www.folkwiki.se/Musik/6043" },
-              { name: "Leipzigs krigsmarch \"Skänk en slant åt spelman\"", url: "http://www.folkwiki.se/Musik/2695" },
-              { name: "Polkett efter Viksta-Lasse", url: "http://www.folkwiki.se/Musik/4581" },
-              { name: "Polonäs efter Gustaf Weslien", url: "http://www.folkwiki.se/Musik/2401" },
-              { name: "Polska efter Viksta-Lasse", url: "http://www.folkwiki.se/Musik/4589" },
-              { name: "Polska i G-moll efter Pekkos Per", url: "http://www.folkwiki.se/Musik/6104" },
-              { name: "Polska mot Trötthet", url: "http://www.folkwiki.se/Musik/346" },
-              { name: "Polska till Wik", url: "http://www.folkwiki.se/Musik/1746" },
-              { name: "Vendelpolskan", url: "http://www.folkwiki.se/Musik/937" },
-            ].map((lat) => (
-              <a
-                key={lat.name}
-                href={lat.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-card border border-border rounded-lg p-4 hover:border-primary transition-colors block"
-              >
+            {[{
+            name: "40-årslåten Polka",
+            url: "http://www.folkwiki.se/Musik/6041"
+          }, {
+            name: "Eklundapolska nr 1",
+            url: "http://www.folkwiki.se/Musik/95"
+          }, {
+            name: "Eklundapolska nr 2",
+            url: "http://www.folkwiki.se/Musik/14"
+          }, {
+            name: "Eklundapolska nr 3",
+            url: "http://www.folkwiki.se/Musik/96"
+          }, {
+            name: "Fröken chick Polkett efter Viksta-Lasse",
+            url: "http://www.folkwiki.se/Musik/4580"
+          }, {
+            name: "Glavalsen efter Viksta-Lasse",
+            url: "http://www.folkwiki.se/Musik/6043"
+          }, {
+            name: "Leipzigs krigsmarch \"Skänk en slant åt spelman\"",
+            url: "http://www.folkwiki.se/Musik/2695"
+          }, {
+            name: "Polkett efter Viksta-Lasse",
+            url: "http://www.folkwiki.se/Musik/4581"
+          }, {
+            name: "Polonäs efter Gustaf Weslien",
+            url: "http://www.folkwiki.se/Musik/2401"
+          }, {
+            name: "Polska efter Viksta-Lasse",
+            url: "http://www.folkwiki.se/Musik/4589"
+          }, {
+            name: "Polska i G-moll efter Pekkos Per",
+            url: "http://www.folkwiki.se/Musik/6104"
+          }, {
+            name: "Polska mot Trötthet",
+            url: "http://www.folkwiki.se/Musik/346"
+          }, {
+            name: "Polska till Wik",
+            url: "http://www.folkwiki.se/Musik/1746"
+          }, {
+            name: "Vendelpolskan",
+            url: "http://www.folkwiki.se/Musik/937"
+          }].map(lat => <a key={lat.name} href={lat.url} target="_blank" rel="noopener noreferrer" className="bg-card border border-border rounded-lg p-4 hover:border-primary transition-colors block">
                 <div className="flex items-center space-x-3">
                   <Music className="w-5 h-5 text-primary flex-shrink-0" />
                   <span className="font-medium">{lat.name}</span>
                 </div>
-              </a>
-            ))}
+              </a>)}
           </div>
         </section>
       </div>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default OmVikstaLasse;
