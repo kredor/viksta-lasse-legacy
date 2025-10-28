@@ -62,7 +62,7 @@ const OmStiftelsen = () => {
             <p className="text-muted-foreground mb-6">
               Läs vår verksamhetsberättelse från 2024 med information om årets aktiviteter.
             </p>
-            <a href="/documents/Verksamhetsberattelse_2024.docx" download>
+            <a href="/documents/Verksamhetsberattelse_2024.docx" download="Verksamhetsberattelse_2024.docx" target="_blank" rel="noopener noreferrer">
               <Button variant="outline" className="w-full">
                 <Download className="mr-2 h-4 w-4" />
                 Ladda ner (DOCX)
@@ -78,7 +78,7 @@ const OmStiftelsen = () => {
             <p className="text-muted-foreground mb-6">
               Stiftelsens stadgar och statuter för Viksta-Lasse stipendiet.
             </p>
-            <a href="/documents/Stadgar.pdf" download>
+            <a href="/documents/Stadgar.pdf" download="Stadgar_Viksta-Lasse.pdf" target="_blank" rel="noopener noreferrer">
               <Button variant="outline" className="w-full">
                 <Download className="mr-2 h-4 w-4" />
                 Ladda ner stadgar (PDF)
