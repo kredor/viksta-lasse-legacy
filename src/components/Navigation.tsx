@@ -19,11 +19,11 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="bg-background border-b border-border sticky top-0 z-50 shadow-sm">
+    <nav className="bg-black border-b border-viksta-gold/20 sticky top-0 z-50 shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center space-x-3">
-            <div className="text-2xl font-bold text-primary">Viksta-Lasse</div>
+            <div className="text-2xl font-bold text-viksta-gold">Viksta-Lasse</div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -33,10 +33,10 @@ const Navigation = () => {
                 key={link.to}
                 to={link.to}
                 className={cn(
-                  "px-4 py-2 rounded-md text-sm font-medium transition-colors",
+                  "px-4 py-2 rounded-md text-base font-medium transition-colors",
                   location.pathname === link.to
-                    ? "text-primary bg-muted"
-                    : "text-foreground hover:text-primary hover:bg-muted/50"
+                    ? "text-viksta-gold bg-viksta-gold/10"
+                    : "text-viksta-gold/80 hover:text-viksta-gold hover:bg-viksta-gold/5"
                 )}
               >
                 {link.label}
@@ -47,7 +47,7 @@ const Navigation = () => {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden p-2 rounded-md hover:bg-muted"
+            className="lg:hidden p-2 rounded-md hover:bg-viksta-gold/10 text-viksta-gold"
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -62,10 +62,10 @@ const Navigation = () => {
                 to={link.to}
                 onClick={() => setIsOpen(false)}
                 className={cn(
-                  "block px-4 py-3 rounded-md text-sm font-medium transition-colors",
+                  "block px-4 py-3 rounded-md text-base font-medium transition-colors",
                   location.pathname === link.to
-                    ? "text-primary bg-muted"
-                    : "text-foreground hover:text-primary hover:bg-muted/50"
+                    ? "text-viksta-gold bg-viksta-gold/10"
+                    : "text-viksta-gold/80 hover:text-viksta-gold hover:bg-viksta-gold/5"
                 )}
               >
                 {link.label}
