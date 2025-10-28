@@ -55,17 +55,9 @@ const OmStiftelsen = () => {
             </ul>
           </section>
 
-          <section>
-            <h2 className="text-2xl font-semibold mb-4">Styrelse</h2>
-            <p className="text-muted-foreground leading-relaxed">
-              Styrelsen består av ledamöter från Viksta Hembygdsförening, en representant för Viksta-Lasses 
-              efterlevande, en representant från Upplands spelmansförbund samt en representant från Upplands nation. 
-              Allt arbete sker på ideell väg.
-            </p>
-          </section>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 gap-8 mb-16 max-w-2xl">
           <div className="bg-card border border-border rounded-lg p-8">
             <div className="flex items-center mb-4">
               <FileText className="w-8 h-8 text-primary mr-3" />
@@ -80,20 +72,6 @@ const OmStiftelsen = () => {
                 Ladda ner (DOCX)
               </Button>
             </a>
-          </div>
-
-          <div className="bg-card border border-border rounded-lg p-8">
-            <div className="flex items-center mb-4">
-              <FileText className="w-8 h-8 text-primary mr-3" />
-              <h3 className="text-xl font-semibold">Verksamhetsplan</h3>
-            </div>
-            <p className="text-muted-foreground mb-6">
-              Läs vår detaljerade verksamhetsplan för innevarande år.
-            </p>
-            <Button variant="outline" className="w-full">
-              <Download className="mr-2 h-4 w-4" />
-              Ladda ner verksamhetsplan (PDF)
-            </Button>
           </div>
 
           <div className="bg-card border border-border rounded-lg p-8">
