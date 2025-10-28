@@ -4,7 +4,7 @@ import { Music } from "lucide-react";
 
 const OmVikstaLasse = () => {
   return (
-    <Layout>
+    <Layout showFooter={false}>
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl md:text-5xl font-bold mb-8 text-primary">Om Viksta-Lasse</h1>
 
@@ -104,18 +104,6 @@ const OmVikstaLasse = () => {
                   <span className="font-medium">{lat.name}</span>
                 </div>
               </a>
-            ))}
-          </div>
-        </section>
-
-        <section className="bg-muted rounded-lg p-8">
-          <h2 className="text-2xl font-semibold mb-4">Bildgalleri</h2>
-          <p className="text-muted-foreground mb-6">
-            Historiska fotografier och bilder från arkivet kommer att visas här.
-          </p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {[1, 2, 3, 4].map((i) => (
-              <div key={i} className="aspect-square bg-background rounded-lg border border-border"></div>
             ))}
           </div>
         </section>
