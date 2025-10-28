@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import { Award, FileText } from "lucide-react";
+import { Award } from "lucide-react";
 
 const Stipendier = () => {
   const tidigareStipendiater = [
@@ -25,24 +25,26 @@ const Stipendier = () => {
             </p>
           </section>
 
-          <div className="bg-primary/5 border-l-4 border-primary rounded-r-lg p-6">
-            <div className="flex items-start">
-              <FileText className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
-              <div>
-                <h3 className="font-semibold text-lg mb-3">Statuterna för stipendiet</h3>
-                <div className="text-muted-foreground space-y-3">
-                  <p>
-                    Fonden till Viksta-Lasses minne har till uppgift, att utdela ekonomiska bidrag 
-                    till personer som aktivt för de folkmusikaliska traditionerna efter Viksta-Lasse vidare.
-                  </p>
-                  <p>
-                    Bidrag, eller stipendier, må lämnas till stöd för utbildning, studier och undervisning 
-                    inom ovan nämnda tradition, eller forskning kring densamma.
-                  </p>
-                </div>
-              </div>
+          <section>
+            <h3 className="font-semibold text-lg mb-3">Statuterna för stipendiet lyder som följer:</h3>
+            <div className="text-muted-foreground space-y-3">
+              <p>
+                Fonden till Viksta-Lasses minne har till uppgift, att utdela ekonomiska bidrag 
+                till personer som aktivt för de folkmusikaliska traditionerna efter Viksta-Lasse vidare.
+              </p>
+              <p>
+                Bidrag, eller stipendier, må lämnas till stöd för utbildning, studier och undervisning 
+                inom ovan nämnda tradition, eller forskning kring densamma.
+              </p>
+              <p>
+                Sittande styrelse anser att stipendiet fortsättningsvis bör tillfalla en person 
+                som för den musikaliska traditionen efter Viksta-Lasse vidare. Styrelsen ser också att 
+                stipendiet företrädesvis tillfaller en yngre spelman samt att denne nödvändigtvis inte 
+                måste vara från Uppland. Stipendiaten anmodas att i samband med Vikstadagen framträda 
+                solo med ett ca 20 min långt program.
+              </p>
             </div>
-          </div>
+          </section>
         </div>
 
         <section>
