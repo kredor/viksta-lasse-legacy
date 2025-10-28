@@ -4,6 +4,7 @@ import vikstaLasseBingsjo1 from "@/assets/historiska-bilder/vikstalasse-bingsjo-
 import vikstaLasseBingsjo2 from "@/assets/historiska-bilder/vikstalasse-bingsjo-2.jpeg";
 import pontusEstling from "@/assets/vikstadagen/pontus-estling.jpg";
 import petrusDillner from "@/assets/vikstadagen/petrus-dillner.jpg";
+import bondpolskaDans from "@/assets/kurser/bondpolska-dans.jpg";
 
 const Bildgalleri = () => {
   const historiskaBilder = [
@@ -14,6 +15,10 @@ const Bildgalleri = () => {
   const stipendiaterBilder = [
     { src: pontusEstling, alt: "Pontus Estling får Viksta-Lasse-stipendiet 2024" },
     { src: petrusDillner, alt: "Petrus Dillner spelar nyckelharpa på Vikstadagen" },
+  ];
+
+  const kurserBilder = [
+    { src: bondpolskaDans, alt: "Dans under kurs i bondpolska" },
   ];
 
   const kategorier = [
@@ -35,9 +40,10 @@ const Bildgalleri = () => {
       bilder: stipendiaterBilder,
     },
     {
-      titel: "Ungdomsläger",
-      antal: 36,
-      beskrivning: "Glädje och lärande från våra sommarläger",
+      titel: "Kurser och andra aktiviteter",
+      antal: 1,
+      beskrivning: "Glädje och lärande från våra kurser och aktiviteter",
+      bilder: kurserBilder,
     },
   ];
 
