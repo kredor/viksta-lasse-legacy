@@ -19,7 +19,7 @@ const Bildgalleri = () => {
   const stipendiaterBilder: Array<{ src: string; alt: string; link?: string }> = [
     { src: pontusEstling, alt: "Pontus Estling får Viksta-Lasse-stipendiet 2024" },
     { src: petrusDillner, alt: "Petrus Dillner spelar nyckelharpa på Vikstadagen" },
-    { src: rbOchSven, alt: "RB och Sven Donat på Vikstadagen 2017", link: "https://youtu.be/_Chb5Hz9yv8" },
+    { src: rbOchSven, alt: "RB och Sven Donat på Vikstadagen 2017", link: "https://www.youtube.com/watch?v=_Chb5Hz9yv8" },
   ];
 
   const vikstadagenBilder: Array<{ src: string; alt: string; link?: string }> = [
