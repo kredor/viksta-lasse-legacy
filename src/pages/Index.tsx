@@ -10,7 +10,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto text-center">
             {/* Logo */}
-            <div className="mb-6">
+            <div className="mb-2">
               <img 
                 src={vikstaLasseLogo} 
                 alt="Viksta-Lasse" 
