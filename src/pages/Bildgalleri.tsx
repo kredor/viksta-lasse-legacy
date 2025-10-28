@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import { Image as ImageIcon } from "lucide-react";
 import vikstaLasseBingsjo1 from "@/assets/historiska-bilder/vikstalasse-bingsjo-1.jpeg";
 import vikstaLasseBingsjo2 from "@/assets/historiska-bilder/vikstalasse-bingsjo-2.jpeg";
+import norgeresa47 from "@/assets/historiska-bilder/norgeresa47.jpg";
 import pontusEstling from "@/assets/vikstadagen/pontus-estling.jpg";
 import petrusDillner from "@/assets/vikstadagen/petrus-dillner.jpg";
 import bondpolskaDans from "@/assets/kurser/bondpolska-dans.jpg";
@@ -12,6 +13,7 @@ const Bildgalleri = () => {
   const historiskaBilder: Array<{ src: string; alt: string; link?: string }> = [
     { src: vikstaLasseBingsjo2, alt: "Viksta-Lasse med RB, Pekka och Bosse i Bingsjö" },
     { src: vikstaLasseBingsjo1, alt: "Jöbs-Lars, RB, Viksta-Lasse och ytterligare en person i Bingsjö" },
+    { src: norgeresa47, alt: "Historisk bild från Norgeresa 1947 med spelmän" },
   ];
 
   const stipendiaterBilder: Array<{ src: string; alt: string; link?: string }> = [
@@ -31,7 +33,7 @@ const Bildgalleri = () => {
   const kategorier = [
     {
       titel: "Viksta-Lasse - Historiska bilder",
-      antal: 2,
+      antal: 3,
       beskrivning: "Arkivfoton och historiska bilder av Viksta-Lasse",
       bilder: historiskaBilder,
     },
