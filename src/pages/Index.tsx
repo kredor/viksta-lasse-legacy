@@ -6,7 +6,7 @@ const Index = () => {
   return (
     <Layout showFooter={false}>
       {/* Hero Section with black background */}
-      <section className="relative bg-black min-h-screen flex items-center justify-center py-20">
+      <section className="relative bg-viksta-dark min-h-screen flex items-center justify-center py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto text-center">
             {/* Logo */}

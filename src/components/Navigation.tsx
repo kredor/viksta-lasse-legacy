@@ -19,7 +19,7 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="bg-black border-b border-viksta-gold/20 sticky top-0 z-50 shadow-sm">
+    <nav className="bg-viksta-dark border-b border-viksta-gold/20 sticky top-0 z-50 shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center space-x-3">
