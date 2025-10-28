@@ -39,13 +39,6 @@ const Stipendier = () => {
                     Bidrag, eller stipendier, må lämnas till stöd för utbildning, studier och undervisning 
                     inom ovan nämnda tradition, eller forskning kring densamma.
                   </p>
-                  <p>
-                    Sittande styrelse för 2013 anser att stipendiet fortsättningsvis bör tillfalla en person 
-                    som för den musikaliska traditionen efter Viksta-Lasse vidare. Styrelsen ser också att 
-                    stipendiet företrädesvis tillfaller en yngre spelman samt att denne nödvändigtvis inte 
-                    måste vara från Uppland. Stipendiaten anmodas att i samband med Vikstadagen framträda 
-                    solo med ett ca 20 min långt program.
-                  </p>
                 </div>
               </div>
             </div>
