@@ -8,28 +8,41 @@ const OmStiftelsen = () => {
 
         <div className="max-w-3xl space-y-8 mb-16">
           <section>
-            <h2 className="text-2xl font-semibold mb-4">Fondens syfte</h2>
+            <h2 className="text-2xl font-semibold mb-4">Om stiftelsen</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Stiftelsen Fonden till Viksta-Lasses minne grundades för att bevara och främja arvet efter
-              den legendariske spelmannen Lars Larsson, känd som Viksta-Lasse.
+              Stiftelsen "Fonden till Viksta-Lasses minne" grundades av Vikstas Hembygdsförening den 14 april 1985. 
+              Fondens ändamål är att bevara och hedra minnet av riksspelmannen Leonard Larsson från Viksta, 
+              alias Viksta-Lasse, död 1983.
             </p>
-            <p className="text-muted-foreground leading-relaxed">Fondens huvudsakliga syfte är att stödja unga musiker och spelmän som arbetar med svensk folkmusik, särskilt den Uppländska traditionen. Genom stipendier och evenemang bidrar vi till att hålla den svenska folkmusiktraditionen levande för kommande generationer.</p>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              Enligt stiftelseurkunden skall detta ske genom att ett minnesmärke reses invid Viksta kyrka, 
+              samt att avkastningen av fondens medel används som stipendier till personer som på ett förtjänstfullt 
+              sätt för Viksta-Lasses spelmanstraditioner vidare.
+            </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-4">Verksamhetsmål</h2>
+            <h2 className="text-2xl font-semibold mb-4">Fondens syfte</h2>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              Fonden till Viksta-Lasses minne har till uppgift att utdela ekonomiska bidrag till personer 
+              som aktivt för de folkmusikaliska traditionerna efter Viksta-Lasse vidare.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              Bidrag, eller stipendier, må lämnas till stöd för utbildning, studier och undervisning inom 
+              ovan nämnda tradition, eller forskning kring densamma.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold mb-4">Verksamhet</h2>
             <ul className="space-y-3 text-muted-foreground">
               <li className="flex items-start">
                 <span className="text-primary mr-2">•</span>
-                <span>Dela ut stipendier till unga musiker och spelmän</span>
+                <span>Årlig stipendieutdelning på Viksta-dagen, den sista söndagen i juli</span>
               </li>
               <li className="flex items-start">
                 <span className="text-primary mr-2">•</span>
-                <span>Arrangera Vikstadagen, ett årligt evenemang för folkmusik</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-primary mr-2">•</span>
-                <span>Organisera ungdomsläger för utbildning i folkmusik</span>
+                <span>Spelmansstämma vid Viksta kyrka tillsammans med Hembygdsföreningen</span>
               </li>
               <li className="flex items-start">
                 <span className="text-primary mr-2">•</span>
@@ -37,9 +50,18 @@ const OmStiftelsen = () => {
               </li>
               <li className="flex items-start">
                 <span className="text-primary mr-2">•</span>
-                <span>Främja forskning och dokumentation av svensk folkmusik</span>
+                <span>Förvalta minnesmärket vid Viksta kyrka (granitblock med bronsrelief, invigt 1987)</span>
               </li>
             </ul>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold mb-4">Styrelse</h2>
+            <p className="text-muted-foreground leading-relaxed">
+              Styrelsen består av ledamöter från Viksta Hembygdsförening, en representant för Viksta-Lasses 
+              efterlevande, en representant från Upplands spelmansförbund samt en representant från Upplands nation. 
+              Allt arbete sker på ideell väg.
+            </p>
           </section>
         </div>
 
@@ -64,12 +86,14 @@ const OmStiftelsen = () => {
               <h3 className="text-xl font-semibold">Stadgar</h3>
             </div>
             <p className="text-muted-foreground mb-6">
-              Stiftelsens stadgar och regelverk.
+              Stiftelsens stadgar och statuter för Viksta-Lasse stipendiet.
             </p>
-            <Button variant="outline" className="w-full">
-              <Download className="mr-2 h-4 w-4" />
-              Ladda ner stadgar (PDF)
-            </Button>
+            <a href="/documents/Stadgar.pdf" download>
+              <Button variant="outline" className="w-full">
+                <Download className="mr-2 h-4 w-4" />
+                Ladda ner stadgar (PDF)
+              </Button>
+            </a>
           </div>
         </div>
 
@@ -77,8 +101,8 @@ const OmStiftelsen = () => {
           <h2 className="text-2xl font-semibold mb-4">Kontaktinformation</h2>
           <div className="space-y-2 text-muted-foreground">
             <p className="font-medium">Stiftelsen Fonden till Viksta-Lasses minne</p>
-            <p>c/o Ordförande</p>
-            <p>Organisationsnummer: XXX XXX-XXXX</p>
+            <p>Grundad: 14 april 1985</p>
+            <p>c/o Vikstas Hembygdsförening</p>
             <p className="mt-4">
               För frågor, kontakta oss via vårt{" "}
               <a href="/kontakt" className="text-primary hover:underline">
