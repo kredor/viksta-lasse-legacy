@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import vikstaLasseLogo from "@/assets/viksta-lasse-logo.jpg";
+import vikstaLasseLogo from "@/assets/viksta-lasse-logo.png";
 import vikstaLassePhoto from "@/assets/viksta-lasse-photo.jpg";
 
 const Index = () => {
