@@ -5,6 +5,7 @@ import orjanEnglund from "@/assets/portraits/orjan-englund.jpg";
 import lennartPettersson from "@/assets/portraits/lennart-pettersson.jpg";
 import orjanBerglund from "@/assets/portraits/orjan-berglund.jpg";
 import jacobHoglund from "@/assets/portraits/jacob-hoglund.jpg";
+import tommyLindholm from "@/assets/portraits/tommy-lindholm.jpg";
 
 const Styrelse = () => {
   const styrelsemedlemmar = [
@@ -44,6 +45,12 @@ const Styrelse = () => {
       roll: "Ledamot",
       beskrivning: "Representant för Uplands nation.",
       bild: jacobHoglund,
+    },
+    {
+      namn: "Tommy Lindholm",
+      roll: "Ledamot",
+      beskrivning: "Representant för Uplands spelmansförbund.",
+      bild: tommyLindholm,
     },
   ];
 
