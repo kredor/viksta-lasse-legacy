@@ -4,34 +4,34 @@ import { User } from "lucide-react";
 const Styrelse = () => {
   const styrelsemedlemmar = [
     {
-      namn: "Ordförande",
+      namn: "Robert Larsson",
       roll: "Ordförande",
       beskrivning: "Ansvarar för stiftelsens övergripande verksamhet och representation.",
     },
     {
-      namn: "Vice ordförande",
-      roll: "Vice ordförande",
-      beskrivning: "Stödjer ordföranden och representerar stiftelsen vid behov.",
-    },
-    {
-      namn: "Sekreterare",
+      namn: "Erika Lindgren Liljenstolpe",
       roll: "Sekreterare",
       beskrivning: "Ansvarar för protokoll och dokumentation av styrelsens arbete.",
     },
     {
-      namn: "Kassör",
+      namn: "Örjan Englund",
       roll: "Kassör",
       beskrivning: "Hanterar stiftelsens ekonomi och finansiella rapportering.",
     },
     {
-      namn: "Ledamot",
+      namn: "Lennart Pettersson",
       roll: "Ledamot",
-      beskrivning: "Aktivt deltar i styrelsens beslut och verksamhet.",
+      beskrivning: "Representant för Viksta-Lasses efterlevande.",
     },
     {
-      namn: "Ledamot",
+      namn: "Örjan Berglund",
       roll: "Ledamot",
-      beskrivning: "Aktivt deltar i styrelsens beslut och verksamhet.",
+      beskrivning: "Representant för Upplands spelmansförbund.",
+    },
+    {
+      namn: "Jacob Höglund",
+      roll: "Ledamot",
+      beskrivning: "Representant för Upplands nation.",
     },
   ];
 
