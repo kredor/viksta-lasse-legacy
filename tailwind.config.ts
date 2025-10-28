@@ -13,7 +13,15 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Archivo', 'Verdana', 'sans-serif'],
+        serif: ['EB Garamond', 'Garamond', 'Times New Roman', 'serif'],
+      },
       colors: {
+        viksta: {
+          dark: "hsl(var(--viksta-dark))",
+          gold: "hsl(var(--viksta-gold))",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
