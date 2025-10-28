@@ -19,7 +19,7 @@ const Index = () => {
             </div>
             
             {/* Photo of Viksta-Lasse */}
-            <div className="max-w-3xl mx-auto">
+            <div className="max-w-2xl mx-auto mt-8">
               <img 
                 src={vikstaLassePhoto} 
                 alt="Viksta-Lasse spelar fiol" 
