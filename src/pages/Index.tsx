@@ -4,7 +4,7 @@ import vikstaLassePhoto from "@/assets/viksta-lasse-photo.jpg";
 
 const Index = () => {
   return (
-    <Layout>
+    <Layout showFooter={false}>
       {/* Hero Section with black background */}
       <section className="relative bg-black min-h-screen flex items-center justify-center py-20">
         <div className="container mx-auto px-4">

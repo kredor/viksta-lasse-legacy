@@ -4,14 +4,15 @@ import Footer from "./Footer";
 
 interface LayoutProps {
   children: ReactNode;
+  showFooter?: boolean;
 }
 
-const Layout = ({ children }: LayoutProps) => {
+const Layout = ({ children, showFooter = true }: LayoutProps) => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navigation />
       <main className="flex-1">{children}</main>
-      <Footer />
+      {showFooter && <Footer />}
     </div>
   );
 };
