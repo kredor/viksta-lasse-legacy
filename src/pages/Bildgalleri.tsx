@@ -56,7 +56,7 @@ const Bildgalleri = () => {
   ];
 
   return (
-    <Layout>
+    <Layout showFooter={false}>
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl md:text-5xl font-bold mb-8 text-primary">Bildgalleri</h1>
 
@@ -123,15 +123,6 @@ const Bildgalleri = () => {
               </div>
             </section>
           ))}
-        </div>
-
-        <div className="mt-16 bg-card border border-border rounded-lg p-8 text-center">
-          <ImageIcon className="w-16 h-16 text-primary mx-auto mb-4" />
-          <h3 className="text-xl font-semibold mb-2">Bilder kommer snart</h3>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Vi arbetar med att digitalisera vårt arkiv och kommer snart att publicera historiska
-            fotografier och bilder från våra evenemang. Återkom gärna senare!
-          </p>
         </div>
       </div>
     </Layout>
