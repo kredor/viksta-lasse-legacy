@@ -1,6 +1,5 @@
 import Layout from "@/components/Layout";
-import { Button } from "@/components/ui/button";
-import { Award, Calendar, FileText } from "lucide-react";
+import { Award, FileText } from "lucide-react";
 
 const Stipendier = () => {
   const tidigareStipendiater = [
@@ -12,90 +11,46 @@ const Stipendier = () => {
   ];
 
   return (
-    <Layout>
+    <Layout showFooter={false}>
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl md:text-5xl font-bold mb-8 text-primary">Stipendier</h1>
 
         <div className="max-w-3xl space-y-8 mb-16">
           <section>
-            <h2 className="text-2xl font-semibold mb-4">Om våra stipendier</h2>
+            <h2 className="text-2xl font-semibold mb-4">Om stipendiet</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Stiftelsen delar årligen ut stipendier till unga musiker och spelmän som arbetar med
-              att bevara och utveckla svensk folkmusik. Stipendierna ges i första hand till de som
-              ägnar sig åt hälsingemusiken och Viksta-Lasses traditioner.
-            </p>
-            <p className="text-muted-foreground leading-relaxed">
-              Stipendierna kan användas för studier, instrumentinköp, forskning, eller andra
-              aktiviteter som främjar den svenska folkmusiken.
+              Fonden till Viksta-Lasses minne delar årligen ut ekonomiska bidrag till personer som 
+              aktivt för de folkmusikaliska traditionerna efter Viksta-Lasse vidare. Stipendiaten 
+              utses av styrelsen enligt nedanstående statuter.
             </p>
           </section>
 
           <div className="bg-primary/5 border-l-4 border-primary rounded-r-lg p-6">
             <div className="flex items-start">
-              <Calendar className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
+              <FileText className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
               <div>
-                <h3 className="font-semibold text-lg mb-2">Ansökningstid 2024</h3>
-                <p className="text-muted-foreground">
-                  Ansökningar tas emot fram till den 31 mars 2024. Beslut om stipendier meddelas
-                  i samband med Vikstadagen i juni.
-                </p>
+                <h3 className="font-semibold text-lg mb-3">Statuterna för stipendiet</h3>
+                <div className="text-muted-foreground space-y-3">
+                  <p>
+                    Fonden till Viksta-Lasses minne har till uppgift, att utdela ekonomiska bidrag 
+                    till personer som aktivt för de folkmusikaliska traditionerna efter Viksta-Lasse vidare.
+                  </p>
+                  <p>
+                    Bidrag, eller stipendier, må lämnas till stöd för utbildning, studier och undervisning 
+                    inom ovan nämnda tradition, eller forskning kring densamma.
+                  </p>
+                  <p>
+                    Sittande styrelse för 2013 anser att stipendiet fortsättningsvis bör tillfalla en person 
+                    som för den musikaliska traditionen efter Viksta-Lasse vidare. Styrelsen ser också att 
+                    stipendiet företrädesvis tillfaller en yngre spelman samt att denne nödvändigtvis inte 
+                    måste vara från Uppland. Stipendiaten anmodas att i samband med Vikstadagen framträda 
+                    solo med ett ca 20 min långt program.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-        <section className="mb-16">
-          <h2 className="text-2xl font-semibold mb-6">Ansökningsinformation</h2>
-          
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
-            <div className="bg-card border border-border rounded-lg p-6">
-              <h3 className="text-xl font-semibold mb-4">Vem kan söka?</h3>
-              <ul className="space-y-2 text-muted-foreground">
-                <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
-                  <span>Unga musiker och spelmän (upp till 30 år)</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
-                  <span>Aktiva inom svensk folkmusik</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
-                  <span>Särskild förtur för hälsingemusik</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-card border border-border rounded-lg p-6">
-              <h3 className="text-xl font-semibold mb-4">Vad ska ansökan innehålla?</h3>
-              <ul className="space-y-2 text-muted-foreground">
-                <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
-                  <span>Personuppgifter och CV</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
-                  <span>Beskrivning av musikalisk bakgrund</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
-                  <span>Motivering och plan för stipendiet</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
-                  <span>Rekommendationsbrev (frivilligt)</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="flex justify-center">
-            <Button size="lg" className="gap-2">
-              <FileText className="w-5 h-5" />
-              Skicka in ansökan via kontaktformuläret
-            </Button>
-          </div>
-        </section>
 
         <section>
           <h2 className="text-2xl font-semibold mb-6 flex items-center">
