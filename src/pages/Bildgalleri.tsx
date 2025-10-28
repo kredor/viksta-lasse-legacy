@@ -1,12 +1,20 @@
 import Layout from "@/components/Layout";
 import { Image as ImageIcon } from "lucide-react";
+import vikstaLasseBingsjo1 from "@/assets/historiska-bilder/vikstalasse-bingsjo-1.jpeg";
+import vikstaLasseBingsjo2 from "@/assets/historiska-bilder/vikstalasse-bingsjo-2.jpeg";
 
 const Bildgalleri = () => {
+  const historiskaBilder = [
+    { src: vikstaLasseBingsjo2, alt: "Viksta-Lasse med RB, Pekka och Bosse i Bingsjö" },
+    { src: vikstaLasseBingsjo1, alt: "Jöbs-Lars, RB, Viksta-Lasse och ytterligare en person i Bingsjö" },
+  ];
+
   const kategorier = [
     {
       titel: "Viksta-Lasse - Historiska bilder",
-      antal: 12,
+      antal: 2,
       beskrivning: "Arkivfoton och historiska bilder av Viksta-Lasse",
+      bilder: historiskaBilder,
     },
     {
       titel: "Vikstadagen genom åren",
@@ -49,16 +57,31 @@ const Bildgalleri = () => {
               </div>
 
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                {Array.from({ length: 8 }).map((_, i) => (
-                  <div
-                    key={i}
-                    className="aspect-square bg-muted rounded-lg border-2 border-border hover:border-primary transition-all cursor-pointer group overflow-hidden"
-                  >
-                    <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-muted to-background group-hover:from-primary/5 group-hover:to-accent/5 transition-all">
-                      <ImageIcon className="w-12 h-12 text-muted-foreground/30 group-hover:text-primary/50 transition-colors" />
+                {kategori.bilder ? (
+                  kategori.bilder.map((bild, i) => (
+                    <div
+                      key={i}
+                      className="aspect-square bg-muted rounded-lg border-2 border-border hover:border-primary transition-all cursor-pointer group overflow-hidden"
+                    >
+                      <img
+                        src={bild.src}
+                        alt={bild.alt}
+                        className="w-full h-full object-cover"
+                      />
                     </div>
-                  </div>
-                ))}
+                  ))
+                ) : (
+                  Array.from({ length: 8 }).map((_, i) => (
+                    <div
+                      key={i}
+                      className="aspect-square bg-muted rounded-lg border-2 border-border hover:border-primary transition-all cursor-pointer group overflow-hidden"
+                    >
+                      <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-muted to-background group-hover:from-primary/5 group-hover:to-accent/5 transition-all">
+                        <ImageIcon className="w-12 h-12 text-muted-foreground/30 group-hover:text-primary/50 transition-colors" />
+                      </div>
+                    </div>
+                  ))
+                )}
               </div>
             </section>
           ))}
