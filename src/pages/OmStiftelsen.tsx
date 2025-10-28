@@ -2,7 +2,7 @@ import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { FileText, Download } from "lucide-react";
 const OmStiftelsen = () => {
-  return <Layout>
+  return <Layout showFooter={false}>
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl md:text-5xl font-bold mb-8 text-primary">Om Stiftelsen</h1>
 
@@ -90,22 +90,6 @@ const OmStiftelsen = () => {
             </a>
           </div>
         </div>
-
-        <section className="bg-muted rounded-lg p-8">
-          <h2 className="text-2xl font-semibold mb-4">Kontaktinformation</h2>
-          <div className="space-y-2 text-muted-foreground">
-            <p className="font-medium">Stiftelsen Fonden till Viksta-Lasses minne</p>
-            <p>Grundad: 14 april 1985</p>
-            <p>c/o Vikstas Hembygdsförening</p>
-            <p className="mt-4">
-              För frågor, kontakta oss via vårt{" "}
-              <a href="/kontakt" className="text-primary hover:underline">
-                kontaktformulär
-              </a>
-              .
-            </p>
-          </div>
-        </section>
       </div>
     </Layout>;
 };
