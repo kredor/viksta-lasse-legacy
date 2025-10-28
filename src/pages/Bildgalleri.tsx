@@ -11,7 +11,7 @@ const Bildgalleri = () => {
     { src: vikstaLasseBingsjo1, alt: "Jöbs-Lars, RB, Viksta-Lasse och ytterligare en person i Bingsjö" },
   ];
 
-  const vikstadagenBilder = [
+  const stipendiaterBilder = [
     { src: pontusEstling, alt: "Pontus Estling får Viksta-Lasse-stipendiet 2024" },
     { src: petrusDillner, alt: "Petrus Dillner spelar nyckelharpa på Vikstadagen" },
   ];
@@ -25,14 +25,14 @@ const Bildgalleri = () => {
     },
     {
       titel: "Vikstadagen genom åren",
-      antal: 2,
+      antal: 48,
       beskrivning: "Bilder från våra årliga folkmusikfester",
-      bilder: vikstadagenBilder,
     },
     {
       titel: "Stipendiater och spelmän",
-      antal: 24,
+      antal: 2,
       beskrivning: "Porträtt av stipendiater och besökande spelmän",
+      bilder: stipendiaterBilder,
     },
     {
       titel: "Ungdomsläger",
