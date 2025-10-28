@@ -13,22 +13,31 @@ const OmVikstaLasse = () => {
             <section>
               <h2 className="text-2xl font-semibold mb-4">Biografi</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Lars Larsson, känd som Viksta-Lasse (1823-1907), var en av Sveriges mest betydelsefulla
-                spelmän under 1800-talet. Född i Viksta, Hälsingland, blev han en legendarisk figur inom
-                svensk folkmusik.
+                Viksta-Lasse, egentligen Johan Leonard Larsson (1897-1983), var en legendarisk fiolspelman 
+                från Eklunda i Viksta församling, Uppsala län. Född den 4 november 1897, började han vid 
+                tio års ålder spela på en fiol byggd av en cigarrlåda.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Han var elev till Hjort Anders Olsson som lärde honom låtar från Bingsjö. Viksta-Lasses 
+                repertoar bestod dock till största delen av uppländska låtar, bland annat via spelmännen 
+                Gås-Anders (Anders Ljungqvist) och August Bohlin. Han komponerade också egna låtar, 
+                däribland tre Eklundapolskor.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Hans spelstil och kompositioner har präglat hälsingemusiken och svensk folkmusik i stort.
-                Viksta-Lasse var känd för sin tekniska skicklighet och sitt uttrycksfulla spel.
+                Viksta-Lasse och Hjort Anders spelade och turnerade under många år tillsammans. Han 
+                hedrades med flera utmärkelser, bland annat Zornmärket i guld 1967, Uplands 
+                spelmansförbunds guldmärke 1975 och Upplands fornminnesförenings förtjänstmedalj 1969. 
+                En staty föreställande honom finns vid Viksta kyrka.
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-semibold mb-4">Betydelse för svensk folkmusik</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Viksta-Lasses bidrag till den svenska folkmusiktraditionen kan inte överskattas. Hans
-                låtar och spelstil har inspirerit generationer av spelmän och fortsätter att spelas
-                vid dansbaneläger och spelmansstämmor runt om i Sverige.
+                Viksta-Lasses bidrag till den svenska folkmusiktraditionen, särskilt den uppländska 
+                spelmanstraditionen, kan inte överskattas. Hans låtar och spelstil har inspirerat 
+                generationer av spelmän och fortsätter att spelas vid dansbaneläger och spelmansstämmor 
+                runt om i Sverige.
               </p>
             </section>
           </div>
