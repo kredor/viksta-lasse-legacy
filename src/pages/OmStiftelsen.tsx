@@ -1,10 +1,8 @@
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { FileText, Download } from "lucide-react";
-
 const OmStiftelsen = () => {
-  return (
-    <Layout>
+  return <Layout>
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl md:text-5xl font-bold mb-8 text-primary">Om Stiftelsen</h1>
 
@@ -15,11 +13,7 @@ const OmStiftelsen = () => {
               Stiftelsen Fonden till Viksta-Lasses minne grundades för att bevara och främja arvet efter
               den legendariske spelmannen Lars Larsson, känd som Viksta-Lasse.
             </p>
-            <p className="text-muted-foreground leading-relaxed">
-              Fondens huvudsakliga syfte är att stödja unga musiker och spelmän som arbetar med svensk
-              folkmusik, särskilt den hälsingska traditionen. Genom stipendier och evenemang bidrar vi
-              till att hålla den svenska folkmusiktraditionen levande för kommande generationer.
-            </p>
+            <p className="text-muted-foreground leading-relaxed">Fondens huvudsakliga syfte är att stödja unga musiker och spelmän som arbetar med svensk folkmusik, särskilt den Uppländska traditionen. Genom stipendier och evenemang bidrar vi till att hålla den svenska folkmusiktraditionen levande för kommande generationer.</p>
           </section>
 
           <section>
@@ -95,8 +89,6 @@ const OmStiftelsen = () => {
           </div>
         </section>
       </div>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default OmStiftelsen;
