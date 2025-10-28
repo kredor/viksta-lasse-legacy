@@ -6,23 +6,25 @@ import pontusEstling from "@/assets/vikstadagen/pontus-estling.jpg";
 import petrusDillner from "@/assets/vikstadagen/petrus-dillner.jpg";
 import bondpolskaDans from "@/assets/kurser/bondpolska-dans.jpg";
 import vikstadagen2017 from "@/assets/vikstadagen/vikstadagen-2017-allspel.jpg";
+import rbOchSven from "@/assets/vikstadagen/rb-och-sven-2017.jpg";
 
 const Bildgalleri = () => {
-  const historiskaBilder = [
+  const historiskaBilder: Array<{ src: string; alt: string; link?: string }> = [
     { src: vikstaLasseBingsjo2, alt: "Viksta-Lasse med RB, Pekka och Bosse i Bingsjö" },
     { src: vikstaLasseBingsjo1, alt: "Jöbs-Lars, RB, Viksta-Lasse och ytterligare en person i Bingsjö" },
   ];
 
-  const stipendiaterBilder = [
+  const stipendiaterBilder: Array<{ src: string; alt: string; link?: string }> = [
     { src: pontusEstling, alt: "Pontus Estling får Viksta-Lasse-stipendiet 2024" },
     { src: petrusDillner, alt: "Petrus Dillner spelar nyckelharpa på Vikstadagen" },
+    { src: rbOchSven, alt: "RB och Sven Donat på Vikstadagen 2017", link: "https://youtu.be/_Chb5Hz9yv8" },
   ];
 
-  const vikstadagenBilder = [
+  const vikstadagenBilder: Array<{ src: string; alt: string; link?: string }> = [
     { src: vikstadagen2017, alt: "Allspel under Vikstadagen 2017" },
   ];
 
-  const kurserBilder = [
+  const kurserBilder: Array<{ src: string; alt: string; link?: string }> = [
     { src: bondpolskaDans, alt: "Dans under kurs i bondpolska" },
   ];
 
@@ -41,7 +43,7 @@ const Bildgalleri = () => {
     },
     {
       titel: "Stipendiater och spelmän",
-      antal: 2,
+      antal: 3,
       beskrivning: "Porträtt av stipendiater och besökande spelmän",
       bilder: stipendiaterBilder,
     },
@@ -78,18 +80,34 @@ const Bildgalleri = () => {
 
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {kategori.bilder ? (
-                  kategori.bilder.map((bild, i) => (
-                    <div
-                      key={i}
-                      className="aspect-square bg-muted rounded-lg border-2 border-border hover:border-primary transition-all cursor-pointer group overflow-hidden"
-                    >
+                  kategori.bilder.map((bild, i) => {
+                    const content = (
                       <img
                         src={bild.src}
                         alt={bild.alt}
                         className="w-full h-full object-cover"
                       />
-                    </div>
-                  ))
+                    );
+                    
+                    return bild.link ? (
+                      <a
+                        key={i}
+                        href={bild.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="aspect-square bg-muted rounded-lg border-2 border-border hover:border-primary transition-all cursor-pointer group overflow-hidden block"
+                      >
+                        {content}
+                      </a>
+                    ) : (
+                      <div
+                        key={i}
+                        className="aspect-square bg-muted rounded-lg border-2 border-border hover:border-primary transition-all cursor-pointer group overflow-hidden"
+                      >
+                        {content}
+                      </div>
+                    );
+                  })
                 ) : (
                   Array.from({ length: 8 }).map((_, i) => (
                     <div
