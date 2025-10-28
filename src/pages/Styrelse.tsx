@@ -13,6 +13,7 @@ const Styrelse = () => {
       roll: "Ordförande",
       beskrivning: "Ansvarar för stiftelsens övergripande verksamhet och representation.",
       bild: robertLarsson,
+      email: "robert@robertlarssonsmaleri.se",
     },
     {
       namn: "Erika Lindgren Liljenstolpe",
@@ -76,6 +77,14 @@ const Styrelse = () => {
               <p className="text-sm text-muted-foreground leading-relaxed">
                 {medlem.beskrivning}
               </p>
+              {medlem.email && (
+                <a 
+                  href={`mailto:${medlem.email}`}
+                  className="text-sm text-primary hover:underline mt-2 block"
+                >
+                  {medlem.email}
+                </a>
+              )}
             </div>
           ))}
         </div>
