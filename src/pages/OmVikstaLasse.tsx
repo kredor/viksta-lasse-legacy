@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Music } from "lucide-react";
+import memorialImage from "@/assets/viksta-lasse-memorial.jpg";
 const OmVikstaLasse = () => {
   return <Layout showFooter={false}>
       <div className="container mx-auto px-4 py-16">
@@ -36,13 +37,12 @@ const OmVikstaLasse = () => {
           </div>
 
           <div className="space-y-6">
-            <div className="bg-muted rounded-lg p-8 text-center">
-              <div className="w-32 h-32 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-6">
-                <Music className="w-16 h-16 text-primary" />
-              </div>
-              <p className="text-sm text-muted-foreground italic">
-                Här kommer bild på Viksta-Lasse att visas
-              </p>
+            <div className="rounded-lg overflow-hidden shadow-lg">
+              <img 
+                src={memorialImage} 
+                alt="Minnesstenen över Viksta-Lasse vid Viksta kyrka" 
+                className="w-full h-auto object-cover"
+              />
             </div>
 
             <Button className="w-full" size="lg" asChild>
