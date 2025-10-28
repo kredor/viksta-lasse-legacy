@@ -36,7 +36,7 @@ const Styrelse = () => {
     },
     {
       namn: "Örjan Berglund",
-      roll: "Ledamot",
+      roll: "Adjungerad ledamot",
       beskrivning: "Representant för Uplands spelmansförbund.",
       bild: orjanBerglund,
     },
