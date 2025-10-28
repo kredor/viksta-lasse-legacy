@@ -9,7 +9,7 @@ const Stipendier = () => {
     { år: "2022", namn: "Kristin Sahlström", beskrivning: "För hennes medryckande spel och stadiga förankring i den uppländska folkmusiken" },
     { år: "2021", namn: "-- inställt", beskrivning: "--" },
     { år: "2020", namn: "-- inställt", beskrivning: "--" },
-    { år: "2019", namn: "Magnus Holmström & Thomas Lindberg", beskrivning: "Har under 10 års tid varit förebilder för ungdomarna i Upplands låtverkstad (ULV) där de med spelglädje och entusiasm förmedlat bland annat låtar efter Viksta-Lasse" },
+    { år: "2019", namn: "Magnus Holmström & Thomas Lindberg", beskrivning: "Har under 10 års tid varit förebilder för ungdomarna i Uplands låtverkstad (ULV) där de med spelglädje och entusiasm förmedlat bland annat låtar efter Viksta-Lasse" },
     { år: "2018", namn: "Pär Näsbom", beskrivning: "För att han är en mästerlig spelman som sprider Viksta-Lasses låtar i Sverige och världen" },
     { år: "2017", namn: "Johan Nylander", beskrivning: "Som enligt juryns motivering har en genuin ton i sitt spel och visar ett brinnande engagemang för folkmusiken, i Viksta-Lasses anda" },
     { år: "2016", namn: "Micke Marin", beskrivning: "Som enligt juryns motivering är en mästerlig låt- och stämspelsspecialist i Viksta-Lasses anda" },

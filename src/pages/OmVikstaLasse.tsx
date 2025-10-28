@@ -23,7 +23,7 @@ const OmVikstaLasse = () => {
                 Gås-Anders (Anders Ljungqvist) och August Bohlin. Han komponerade också egna låtar, 
                 däribland tre Eklundapolskor.
               </p>
-              <p className="text-muted-foreground leading-relaxed">Viksta-Lasse och Hjort Anders spelade och turnerade under många år tillsammans. Han hedrades med flera utmärkelser, bland annat Zornmärket i guld 1967, Uplands spelmansförbunds guldmärke 1975 och Upplands fornminnesförenings förtjänstmedalj 1969. En minnessten över honom finns vid Viksta kyrka.</p>
+              <p className="text-muted-foreground leading-relaxed">Viksta-Lasse och Hjort Anders spelade och turnerade under många år tillsammans. Han hedrades med flera utmärkelser, bland annat Zornmärket i guld 1967, Uplands spelmansförbunds guldmärke 1975 och Uplands fornminnesförenings förtjänstmedalj 1969. En minnessten över honom finns vid Viksta kyrka.</p>
             </section>
 
             <section>

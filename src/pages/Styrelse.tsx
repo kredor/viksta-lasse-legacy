@@ -36,13 +36,13 @@ const Styrelse = () => {
     {
       namn: "Örjan Berglund",
       roll: "Ledamot",
-      beskrivning: "Representant för Upplands spelmansförbund.",
+      beskrivning: "Representant för Uplands spelmansförbund.",
       bild: orjanBerglund,
     },
     {
       namn: "Jacob Höglund",
       roll: "Ledamot",
-      beskrivning: "Representant för Upplands nation.",
+      beskrivning: "Representant för Uplands nation.",
       bild: jacobHoglund,
     },
   ];
