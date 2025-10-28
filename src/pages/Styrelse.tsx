@@ -48,7 +48,7 @@ const Styrelse = () => {
   ];
 
   return (
-    <Layout>
+    <Layout showFooter={false}>
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl md:text-5xl font-bold mb-8 text-primary">Styrelse</h1>
 
@@ -87,19 +87,6 @@ const Styrelse = () => {
               )}
             </div>
           ))}
-        </div>
-
-        <div className="mt-16 bg-muted rounded-lg p-8">
-          <h2 className="text-2xl font-semibold mb-4">Kontakta styrelsen</h2>
-          <p className="text-muted-foreground mb-4">
-            För frågor till styrelsen, använd vårt kontaktformulär eller skicka e-post till ordföranden.
-          </p>
-          <a
-            href="/kontakt"
-            className="inline-flex items-center text-primary hover:underline font-medium"
-          >
-            Gå till kontaktsidan →
-          </a>
         </div>
       </div>
     </Layout>
