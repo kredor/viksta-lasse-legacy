@@ -43,9 +43,11 @@ const OmVikstaLasse = () => {
               </p>
             </div>
 
-            <Button className="w-full" size="lg">
-              <Music className="mr-2 h-5 w-5" />
-              Lyssna på webfiolinspelningar
+            <Button className="w-full" size="lg" asChild>
+              <a href="https://webbfiol.se/" target="_blank" rel="noopener noreferrer">
+                <Music className="mr-2 h-5 w-5" />
+                Lyssna på webfiolinspelningar
+              </a>
             </Button>
           </div>
         </div>
