@@ -2,11 +2,18 @@ import Layout from "@/components/Layout";
 import { Image as ImageIcon } from "lucide-react";
 import vikstaLasseBingsjo1 from "@/assets/historiska-bilder/vikstalasse-bingsjo-1.jpeg";
 import vikstaLasseBingsjo2 from "@/assets/historiska-bilder/vikstalasse-bingsjo-2.jpeg";
+import pontusEstling from "@/assets/vikstadagen/pontus-estling.jpg";
+import petrusDillner from "@/assets/vikstadagen/petrus-dillner.jpg";
 
 const Bildgalleri = () => {
   const historiskaBilder = [
     { src: vikstaLasseBingsjo2, alt: "Viksta-Lasse med RB, Pekka och Bosse i Bingsjö" },
     { src: vikstaLasseBingsjo1, alt: "Jöbs-Lars, RB, Viksta-Lasse och ytterligare en person i Bingsjö" },
+  ];
+
+  const vikstadagenBilder = [
+    { src: pontusEstling, alt: "Pontus Estling får Viksta-Lasse-stipendiet 2024" },
+    { src: petrusDillner, alt: "Petrus Dillner spelar nyckelharpa på Vikstadagen" },
   ];
 
   const kategorier = [
@@ -18,8 +25,9 @@ const Bildgalleri = () => {
     },
     {
       titel: "Vikstadagen genom åren",
-      antal: 48,
+      antal: 2,
       beskrivning: "Bilder från våra årliga folkmusikfester",
+      bilder: vikstadagenBilder,
     },
     {
       titel: "Stipendiater och spelmän",
