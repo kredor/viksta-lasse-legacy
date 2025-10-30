@@ -3,7 +3,7 @@ import { Award } from "lucide-react";
 
 const Stipendier = () => {
   const tidigareStipendiater = [
-    { år: "2025", namn: "Petrus Dillner", beskrivning: "" },
+    { år: "2025", namn: "Petrus Dillner", beskrivning: "En enastående skicklig spelman där traditionen efter äldre uppländska spelmän, såsom Viksta-Lasse, tydligt hörs i hans välklingande spel." },
     { år: "2024", namn: "Pontus Estling", beskrivning: "För hans briljanta spel på klarinett och för att ha fört Viksta-Lasses musik långt utanför folkmusikvärlden" },
     { år: "2023", namn: "Sven Ahlbäck", beskrivning: "För hans djupa kunskaper om den uppländska folkmusiken och sitt starka personliga fiolspel som inspirerats av tidiga möten med Viksta-Lasse" },
     { år: "2022", namn: "Kristin Sahlström", beskrivning: "För hennes medryckande spel och stadiga förankring i den uppländska folkmusiken" },
