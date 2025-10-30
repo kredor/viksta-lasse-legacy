@@ -104,14 +104,6 @@ All colors MUST be HSL.
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-impact;
-  }
-}
-
-@layer utilities {
-  .font-impact {
-    font-family: 'Impact', 'Arial Black', sans-serif;
-    font-weight: 900;
-    letter-spacing: 0.02em;
+    @apply font-sans;
   }
 }
