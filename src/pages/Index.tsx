@@ -13,7 +13,7 @@ const Index = () => {
             </div>
             
             {/* Title */}
-            <h1 className="text-viksta-gold font-sans text-3xl md:text-3xl mb-12 tracking-wide font-medium">
+            <h1 className="text-viksta-gold font-sans text-3xl md:text-3xl mb-12 tracking-wide">
               STIFTELSEN FONDEN TILL VIKSTA-LASSES MINNE
             </h1>
             
