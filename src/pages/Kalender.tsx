@@ -43,7 +43,7 @@ const Kalender = () => {
                   <span>Allspelet vid Viksta-Lasses minnessten</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-viksta-gold mr-2">14:00</span>
+                  <span className="text-viksta-gold mr-2">13:30</span>
                   <span>Utdelning av stipendium</span>
                 </li>
                 <li className="flex items-start">
