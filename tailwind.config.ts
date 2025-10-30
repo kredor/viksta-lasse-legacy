@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Archivo', 'Verdana', 'sans-serif'],
+        sans: ['Verdana', 'Archivo', 'sans-serif'],
         serif: ['EB Garamond', 'Garamond', 'Times New Roman', 'serif'],
       },
       colors: {
