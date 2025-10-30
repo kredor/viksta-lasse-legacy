@@ -1,29 +1,19 @@
 import Layout from "@/components/Layout";
 import { Calendar as CalendarIcon, MapPin, Clock } from "lucide-react";
 import vikstadagenLogo from "@/assets/vikstadagen-logo.png";
-
 const Kalender = () => {
-  return (
-    <Layout showFooter={false}>
+  return <Layout showFooter={false}>
       <div className="container mx-auto px-4 py-16">
         {/* Vikstadagen Logo */}
         <div className="mb-12 flex justify-center">
-          <img 
-            src={vikstadagenLogo} 
-            alt="Vikstadagen" 
-            className="max-w-2xl w-full h-auto"
-          />
+          <img src={vikstadagenLogo} alt="Vikstadagen" className="max-w-2xl w-full h-auto" />
         </div>
 
         {/* Vikstadagen Section */}
         <section className="mb-16 bg-viksta-dark rounded-lg overflow-hidden">
           <div className="p-8 md:p-12">
             <div className="max-w-3xl mx-auto text-center mb-8">
-              <p className="text-viksta-gold/90 text-lg leading-relaxed mb-6">
-                Den stora folkmusikfesten till Viksta-Lasses minne. En dag fylld av musik, dans,
-                gemenskap och traditioner. Här möts spelmän från när och fjärran för att fira
-                det hälsingska kulturarvet.
-              </p>
+              <p className="text-viksta-gold/90 text-lg leading-relaxed mb-6">Den stora folkmusikfesten till Viksta-Lasses minne. En dag fylld av musik, dans, gemenskap och traditioner. Här möts spelmän från när och fjärran i både scenspel och buskspel.</p>
               
               <div className="grid md:grid-cols-3 gap-6 mt-8">
                 <div className="bg-white/5 rounded-lg p-4 border border-viksta-gold/20">
@@ -65,8 +55,6 @@ const Kalender = () => {
           </div>
         </section>
       </div>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default Kalender;
