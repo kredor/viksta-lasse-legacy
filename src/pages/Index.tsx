@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout";
 import vikstaLasseLogo from "@/assets/viksta-lasse-logo.png";
-import vikstaLassePhoto from "@/assets/viksta-lasse-photo.jpg";
+import vikstaLassePhoto from "@/assets/viksta-lasse-new.jpg";
 const Index = () => {
   return <Layout showFooter={false}>
       {/* Hero Section with black background */}
