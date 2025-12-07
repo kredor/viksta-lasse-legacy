@@ -14,7 +14,7 @@ const Styrelse = () => {
       roll: "Ordförande",
       beskrivning: "Ansvarar för stiftelsens övergripande verksamhet och representation.",
       bild: robertLarsson,
-      email: "robert@robertlarssonsmaleri.se",
+      email: "ordf@vikstalasse.org",
     },
     {
       namn: "Erika Lindgren Liljenstolpe",
