@@ -1,9 +1,7 @@
 import Layout from "@/components/Layout";
 import { Mail, MapPin, Phone, Building2 } from "lucide-react";
-
 const Kontakt = () => {
-  return (
-    <Layout showFooter={false}>
+  return <Layout showFooter={false}>
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl md:text-5xl font-bold mb-8 text-primary">Kontakt</h1>
 
@@ -16,12 +14,8 @@ const Kontakt = () => {
                 <Mail className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold mb-2">E-post</h3>
-                  <a 
-                    href="mailto:vikstalassefonden@gmail.com"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    vikstalassefonden@gmail.com
-                  </a>
+                  <a href="mailto:vikstalassefonden@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">info@vikstalasse.org
+                </a>
                 </div>
               </div>
             </div>
@@ -31,10 +25,7 @@ const Kontakt = () => {
                 <Phone className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold mb-2">Telefon</h3>
-                  <a 
-                    href="tel:+46706105990"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
+                  <a href="tel:+46706105990" className="text-muted-foreground hover:text-primary transition-colors">
                     070-610 59 90
                   </a>
                 </div>
@@ -69,8 +60,6 @@ const Kontakt = () => {
           </div>
         </div>
       </div>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default Kontakt;
