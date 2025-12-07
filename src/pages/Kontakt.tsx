@@ -14,7 +14,7 @@ const Kontakt = () => {
                 <Mail className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold mb-2">E-post</h3>
-                  <a href="mailto:vikstalassefonden@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">info@vikstalasse.org
+                  <a href="mailto:info@vikstalasse.org" className="text-muted-foreground hover:text-primary transition-colors">info@vikstalasse.org
                 </a>
                 </div>
               </div>
