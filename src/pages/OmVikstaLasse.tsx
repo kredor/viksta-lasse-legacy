@@ -87,66 +87,6 @@ const OmVikstaLasse = () => {
           </div>
         </section>
 
-        <section className="mb-16">
-          <h2 className="text-2xl font-semibold mb-6">Låtar av Viksta-Lasse</h2>
-          <p className="text-muted-foreground mb-6">
-            Nedan följer låtar komponerade av eller förknippade med Viksta-Lasse. 
-            Noterna och mer information finns på{" "}
-            <a href="http://www.folkwiki.se/Personer/Viksta-Lasse" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">
-              FolkWiki
-            </a>.
-          </p>
-          <div className="grid md:grid-cols-2 gap-4">
-            {[{
-            name: "40-årslåten Polka",
-            url: "http://www.folkwiki.se/Musik/6041"
-          }, {
-            name: "Eklundapolska nr 1",
-            url: "http://www.folkwiki.se/Musik/95"
-          }, {
-            name: "Eklundapolska nr 2",
-            url: "http://www.folkwiki.se/Musik/14"
-          }, {
-            name: "Eklundapolska nr 3",
-            url: "http://www.folkwiki.se/Musik/96"
-          }, {
-            name: "Fröken chick Polkett efter Viksta-Lasse",
-            url: "http://www.folkwiki.se/Musik/4580"
-          }, {
-            name: "Glavalsen efter Viksta-Lasse",
-            url: "http://www.folkwiki.se/Musik/6043"
-          }, {
-            name: "Leipzigs krigsmarch \"Skänk en slant åt spelman\"",
-            url: "http://www.folkwiki.se/Musik/2695"
-          }, {
-            name: "Polkett efter Viksta-Lasse",
-            url: "http://www.folkwiki.se/Musik/4581"
-          }, {
-            name: "Polonäs efter Gustaf Weslien",
-            url: "http://www.folkwiki.se/Musik/2401"
-          }, {
-            name: "Polska efter Viksta-Lasse",
-            url: "http://www.folkwiki.se/Musik/4589"
-          }, {
-            name: "Polska i G-moll efter Pekkos Per",
-            url: "http://www.folkwiki.se/Musik/6104"
-          }, {
-            name: "Polska mot Trötthet",
-            url: "http://www.folkwiki.se/Musik/346"
-          }, {
-            name: "Polska till Wik",
-            url: "http://www.folkwiki.se/Musik/1746"
-          }, {
-            name: "Vendelpolskan",
-            url: "http://www.folkwiki.se/Musik/937"
-          }].map(lat => <a key={lat.name} href={lat.url} target="_blank" rel="noopener noreferrer" className="bg-card border border-border rounded-lg p-4 hover:border-primary transition-colors block">
-                <div className="flex items-center space-x-3">
-                  <Music className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span className="font-medium">{lat.name}</span>
-                </div>
-              </a>)}
-          </div>
-        </section>
       </div>
     </Layout>;
 };
