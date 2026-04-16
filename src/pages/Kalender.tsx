@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import { Calendar as CalendarIcon, MapPin, Clock } from "lucide-react";
+import { Calendar as CalendarIcon, MapPin, Clock, Users, Phone } from "lucide-react";
 import vikstadagenLogo from "@/assets/vikstadagen-logo.png";
 const Kalender = () => {
   return <Layout showFooter={false}>
@@ -50,6 +50,54 @@ const Kalender = () => {
                   <span className="text-viksta-gold mr-2">17:00</span>
                   <span>Slut</span>
                 </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* Kurs i Viksta-Lasse-låtar */}
+        <section className="mb-16 bg-viksta-dark rounded-lg overflow-hidden">
+          <div className="p-8 md:p-12">
+            <h2 className="text-3xl font-bold text-viksta-gold mb-6 text-center font-heading">Kurs i Viksta-Lasse-låtar</h2>
+            <div className="max-w-3xl mx-auto text-center mb-8">
+              <p className="text-viksta-gold/90 text-lg leading-relaxed mb-6">
+                Kurs i Viksta-Lasse-låtar på Eric Sahlström Institutet i Tobo. Kursen inkluderar helpension och övernattning i dubbelrum. OBS: tag med egna sängkläder!
+              </p>
+
+              <div className="grid md:grid-cols-3 gap-6 mt-8">
+                <div className="bg-white/5 rounded-lg p-4 border border-viksta-gold/20">
+                  <CalendarIcon className="w-8 h-8 text-viksta-gold mx-auto mb-2" />
+                  <p className="text-white font-semibold">30–31 maj 2025</p>
+                </div>
+                <div className="bg-white/5 rounded-lg p-4 border border-viksta-gold/20">
+                  <Clock className="w-8 h-8 text-viksta-gold mx-auto mb-2" />
+                  <p className="text-white font-semibold">Lördag 12:30 – Söndag ca 13:00</p>
+                </div>
+                <div className="bg-white/5 rounded-lg p-4 border border-viksta-gold/20">
+                  <MapPin className="w-8 h-8 text-viksta-gold mx-auto mb-2" />
+                  <p className="text-white font-semibold">Eric Sahlström Institutet, Tobo</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white/5 rounded-lg p-6 border border-viksta-gold/30 mb-6">
+              <div className="flex items-center gap-2 mb-4">
+                <Users className="w-6 h-6 text-viksta-gold" />
+                <h3 className="text-2xl font-bold text-viksta-gold">Lärare</h3>
+              </div>
+              <p className="text-white/90 leading-relaxed">
+                Örjan Englund, Eva Tjörnebo, Robert Larsson, Erika Lindgren Liljenstolpe, Gunnel Viking
+              </p>
+            </div>
+
+            <div className="bg-white/5 rounded-lg p-6 border border-viksta-gold/30">
+              <div className="flex items-center gap-2 mb-4">
+                <Phone className="w-6 h-6 text-viksta-gold" />
+                <h3 className="text-2xl font-bold text-viksta-gold">Kontakt</h3>
+              </div>
+              <ul className="space-y-2 text-white/90">
+                <li>Robert Larsson (ordförande): <a href="tel:0706105990" className="text-viksta-gold hover:underline">0706-105990</a></li>
+                <li>Erika Lindgren Liljenstolpe (sekreterare): <a href="tel:0706730660" className="text-viksta-gold hover:underline">0706-730660</a></li>
               </ul>
             </div>
           </div>
