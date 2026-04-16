@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import { Calendar as CalendarIcon, MapPin, Clock } from "lucide-react";
+import { Calendar as CalendarIcon, MapPin, Clock, Users, Phone } from "lucide-react";
 import vikstadagenLogo from "@/assets/vikstadagen-logo.png";
 const Kalender = () => {
   return <Layout showFooter={false}>
