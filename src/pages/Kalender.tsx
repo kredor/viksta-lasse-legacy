@@ -40,7 +40,7 @@ const Kalender = () => {
             </div>
 
             <div className="max-w-3xl mx-auto text-center mb-8">
-              <p className="text-viksta-gold/90 text-lg leading-relaxed mb-6">Den stora folkmusikfesten till Viksta-Lasses minne. En dag fylld av musik, dans, gemenskap och traditioner. Här möts spelmän från när och fjärran i både scenspel och buskspel.</p>
+              <p className="text-viksta-gold/90 text-lg leading-relaxed mb-6">Den stora folkmusikfesten till Viksta-Lasses minne. En dag fylld av musik, gemenskap och traditioner. Här möts spelmän från när och fjärran i både scenspel och buskspel.</p>
               
               <div className="grid md:grid-cols-3 gap-6 mt-8">
                 <div className="bg-white/5 rounded-lg p-4 border border-viksta-gold/20">
