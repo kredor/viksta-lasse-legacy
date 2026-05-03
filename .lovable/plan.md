@@ -1,29 +1,27 @@
-
-
-## Plan: Lägg till kurs-event på Kalendersidan
+## Plan: Visa Vikstadagen 2026-affischen på Kalendersidan
 
 ### Vad som ska göras
 
-Lägga till en ny sektion på Kalendersidan för kursen "Kurs i Viksta-Lasse-låtar" på ESI i Tobo, 30-31 maj. Eftersom anmälningstiden redan passerat visas bara informationen om eventet (inga anmälningslänkar eller betalningsinfo).
+Lägga till den uppladdade affischen för Vikstadagen 26 juli 2026 på Kalendersidan, snyggt presenterad i Vikstadagen-sektionen.
 
-### Innehåll som publiceras
+### Placering & visuell utformning
 
-- **Rubrik**: Kurs i Viksta-Lasse-låtar
-- **Plats**: Eric Sahlström Institutet, Tobo
-- **Datum**: 30-31 maj (2025)
-- **Tider**: Start lördag kl 12:30, avslut söndag ca kl 13
-- **Info**: Helpension och övernattning ingår. Egna sängkläder medtages.
-- **Lärare**: Örjan Englund, Eva Tjörnebo, Robert Larsson, Erika Lindgren Liljenstolpe, Gunnel Viking
-- **Kontakt**: Robert Larsson (0706-105990), Erika Lindgren Liljenstolpe (0706-730660)
+På `/kalender`, i den befintliga "Vikstadagen"-sektionen:
 
-Anmälningslänk, betalningsinfo och deadlines utelämnas eftersom de redan passerat.
+- Konvertera PDF:en till en webbvänlig bildversion (JPG) så den renderas direkt i webbläsaren utan PDF-viewer.
+- Visa affischen som ett centrerat, framträdande element direkt under Vikstadagen-logotypen, ovanför programlistan.
+- Affischen får en guldfärgad ram (matchar `viksta-gold`) med mjuk skugga, rundade hörn, och responsiv max-bredd (~max 600px på desktop, full bredd på mobil).
+- Affischen är klickbar och öppnar PDF-originalet i ny flik så besökare kan ladda ner / skriva ut den i högupplöst kvalitet.
+- Liten textlänk under bilden: "Ladda ner affisch (PDF)".
 
 ### Teknisk ändring
 
-**Fil: `src/pages/Kalender.tsx`**
-- Lägg till en ny `<section>` efter Vikstadagen-sektionen, med samma visuella stil (mörk bakgrund, guld-accenter)
-- Tre info-kort: datum, tid, plats (samma mönster som Vikstadagen)
-- Textblock med kursinformation och lärare
-- Kontaktuppgifter längst ner
-- Importera `Users`-ikon från lucide-react för lärarsektionen
+**Filer:**
+- Spara PDF i `public/vikstadagen-2026-affisch.pdf` (för nedladdning).
+- Spara JPG-version i `src/assets/vikstadagen-2026-affisch.jpg` (för visning i sidan, importeras som modul).
+- Redigera `src/pages/Kalender.tsx`:
+  - Importera den nya bilden.
+  - Lägg in en ny `<a>` runt en `<img>` mellan Vikstadagen-logotypen och beskrivningstexten.
+  - Använd Tailwind-klasser för ram, skugga, rundade hörn och responsiv layout.
 
+Ingen ändring görs på andra sidor — affischen visas endast på Kalendersidan i Vikstadagen-sektionen, vilket är där all event-info redan ligger.
