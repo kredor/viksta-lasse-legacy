@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import { Calendar as CalendarIcon, MapPin, Clock, Users, Phone } from "lucide-react";
 import vikstadagenLogo from "@/assets/vikstadagen-logo.png";
+import vikstadagenAffisch from "@/assets/vikstadagen-2026-affisch.jpg";
 const Kalender = () => {
   return <Layout showFooter={false}>
       <div className="container mx-auto px-4 py-16">
@@ -12,6 +13,32 @@ const Kalender = () => {
         {/* Vikstadagen Section */}
         <section className="mb-16 bg-viksta-dark rounded-lg overflow-hidden">
           <div className="p-8 md:p-12">
+            {/* Affisch 2026 */}
+            <div className="mb-10 flex flex-col items-center">
+              <a
+                href="/vikstadagen-2026-affisch.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block max-w-xl w-full transition-transform duration-300 hover:scale-[1.02]"
+                aria-label="Öppna affisch för Vikstadagen 2026 (PDF)"
+              >
+                <img
+                  src={vikstadagenAffisch}
+                  alt="Affisch för Vikstadagen 26 juli 2026 i Viksta, Björklinge"
+                  className="w-full h-auto rounded-lg border-2 border-viksta-gold/60 shadow-2xl shadow-black/50 group-hover:border-viksta-gold transition-colors"
+                  loading="lazy"
+                />
+              </a>
+              <a
+                href="/vikstadagen-2026-affisch.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 text-sm text-viksta-gold hover:underline"
+              >
+                Ladda ner affisch (PDF)
+              </a>
+            </div>
+
             <div className="max-w-3xl mx-auto text-center mb-8">
               <p className="text-viksta-gold/90 text-lg leading-relaxed mb-6">Den stora folkmusikfesten till Viksta-Lasses minne. En dag fylld av musik, dans, gemenskap och traditioner. Här möts spelmän från när och fjärran i både scenspel och buskspel.</p>
               
